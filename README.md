@@ -3,7 +3,7 @@ A Fluent image setting with Elasticsearch output plugin to send event data to El
 
 You must have a server with Elasticsearch installed and configured on port 9200.
 
-## hands-on
+# hands-on
 Ensure that Elasticsearch is running and run the container:
 
 ```bash
