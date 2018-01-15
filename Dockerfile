@@ -11,5 +11,5 @@ RUN    apk add --update --virtual .build-deps sudo build-base ruby-dev \
 # fluent config 
 COPY fluent-to-elasticsearch.conf /fluentd/etc/
 
-# new config
+# config file
 ENV FLUENTD_CONF=fluent-to-elasticsearch.conf
