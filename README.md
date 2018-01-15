@@ -26,4 +26,4 @@ Enable the pipeline for Elasticsearch.
 # more info
 Based on [Fluentd](https://docs.fluentd.org/v1.0/articles/config-file) with [Elasticsearch plugin](https://github.com/uken/fluent-plugin-elasticsearch).
 
-About [Docker logger](https://docs.docker.com/engine/admin/logging/overview/) output and [Loggind Driver to Fluentd](https://docs.fluentd.org/v0.12/articles/docker-logging).
+About [Docker logger](https://docs.docker.com/engine/admin/logging/overview/) output and [Logging Driver to Fluentd](https://docs.fluentd.org/v0.12/articles/docker-logging).
