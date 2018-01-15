@@ -10,11 +10,13 @@ Ensure that Elasticsearch is running and run the container:
 docker run -d -p 24224:24224 bortes/fluent-elasticsearch
 ```
 
+
 After that, just run your desired dockerized application and setting logger output. For example:
 
 ```bash
 docker run -d -p 8080:80 --log-driver=fluentd --log-opt fluentd-address=localhost:24224 tutum/hello-world
 ```
+
 
 # next steps
 Enable the pipeline for Elasticsearch.
