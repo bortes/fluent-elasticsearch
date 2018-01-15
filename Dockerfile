@@ -1,7 +1,7 @@
 FROM fluent/fluentd:v0.14
 
 # https://github.com/fluent/fluentd-docker-image#3-customize-dockerfile-to-install-plugins-optional
-# install fluent plugin
+# install elasticsearch plugin
 RUN    apk add --update --virtual .build-deps sudo build-base ruby-dev \
     && gem install fluent-plugin-elasticsearch --no-document \
     && gem sources --clear-all \
