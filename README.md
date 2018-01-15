@@ -3,6 +3,7 @@ A image setting with Elasticsearch output plugin to send event data to Elasticse
 
 You must have a server with Elasticsearch installed and configured on port 9200.
 
+
 # hands-on
 Ensure that Elasticsearch is running and run the container:
 
@@ -20,6 +21,7 @@ docker run -d -p 8080:80 --log-driver=fluentd --log-opt fluentd-address=localhos
 
 # next steps
 Enable the pipeline for Elasticsearch.
+
 
 # more info
 Based on [Fluentd](https://docs.fluentd.org/v1.0/articles/config-file) with [Elasticsearch plugin](https://github.com/uken/fluent-plugin-elasticsearch).
