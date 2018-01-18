@@ -9,7 +9,7 @@ RUN    apk add --update --virtual .build-deps sudo build-base ruby-dev \
     && rm -rf /var/cache/apk/* /home/fluent/.gem/ruby/2.3.0/cache/*.gem
 
 # fluent config 
-COPY fluent-to-elasticsearch.conf /fluentd/etc/
+COPY fluent-to-elasticsearch.conf /fluentd/etc/in_docker.conf
 
 # config file
-ENV FLUENTD_CONF=fluent-to-elasticsearch.conf
+ENV FLUENTD_CONF=in_docker.conf
