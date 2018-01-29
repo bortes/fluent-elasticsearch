@@ -8,14 +8,14 @@ You must have a server with Elasticsearch installed and configured on port 9200.
 Ensure that Elasticsearch is running and run the container:
 
 ```bash
-docker run -d -p 24224:24224 bortes/fluent-elasticsearch
+docker run --rm -p 24224:24224 bortes/fluentd-elasticsearch
 ```
 
 
 After that, just run your desired dockerized application and setting logger output. For example:
 
 ```bash
-docker run -d -p 8080:80 --log-driver=fluentd --log-opt fluentd-address=localhost:24224 tutum/hello-world
+docker run --rm -p 8080:80 --log-driver=fluentd --log-opt fluentd-address=localhost:24224 nginx:alpine
 ```
 
 
